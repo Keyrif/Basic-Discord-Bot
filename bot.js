@@ -52,7 +52,7 @@ bot.on("message", message => {
       .setTitle('CHECK YOUR DMs!')
       .setDescription('The invite link has been generated in your DMs!\nIf you have not received anything be sure to have DMs turned on in the server settings!')
       .setImage('https://i.imgur.com/7I0KXQa.png')
-      .setFooter(`Comanda folosita de catre ${message.author.tag}`, `${message.author.displayAvatarURL({ dynamic: true, size: 1024 })}`)
+      .setFooter(`Requested by ${message.author.tag}`, `${message.author.displayAvatarURL({ dynamic: true, size: 1024 })}`)
     message.author.send('YOUR LINK HERE')
 
     message.channel.send(exampleEmbed);
